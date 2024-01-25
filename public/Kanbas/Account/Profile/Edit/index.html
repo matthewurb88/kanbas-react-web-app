@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+</head>
+
+<body>
+
+  <div>
+    <h1>Matthew Urbano</h1>
+    <form action="/path/to/your/server/script" method="post">
+      <div>
+        <label for="name">Name:*</label>
+        <input type="text" id="name" name="name" value="Matthew Urbano" required>
+        <label for="pronouns">Pronouns:</label>
+        <select id="pronouns" name="pronouns">
+          <option value="none">None</option>
+          <!-- Add other options here -->
+        </select>
+      </div>
+      <div>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title">
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>No registered services, you can add some on the <a href="#">settings page</a>.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>No registered services, you can add some on the <a href="#">settings page</a>.</p>
+      </div>
+      <div>
+        <h3>Biography</h3>
+        <textarea id="biography" name="biography"
+          rows="4">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <ul>
+          <li><a href="https://www.youtube.com" target="_blank">YouTube</a> Links to an external site.</li>
+        </ul>
+        <label for="newTitle">Title</label>
+        <input type="text" id="newTitle" name="newTitle" value="YouTube">
+        <label for="newURL">URL</label>
+        <input type="url" id="newURL" name="newURL" value="https://www.youtube.com">
+        <button type="button" onclick="alert('Link Removed');">Remove</button><br>
+        <button type="button" onclick="alert('Add another link');">Add another link</button>
+      </div>
+      <div>
+        <input type="button" value="Cancel" onclick="window.location.href='../screen.html';">
+        <input type="button" value="Save Profile" onclick="window.location.href='../screen.html';">
+      </div>
+      <div>
+        <input type="button" value="Edit Profile" onclick="window.location.href='screen.html';">
+        <input type="button" value="Cancel Editing" onclick="window.location.href='../screen.html';">
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
