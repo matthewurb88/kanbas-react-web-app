@@ -1,0 +1,10 @@
+ul li.active a {
+  color: black;
+  border-left: 3px solid black;
+  padding-left: 15px; 
+}
+
+.green-border-left {
+  border-left: 4px solid green; /* Adjust the thickness as needed */
+}
+

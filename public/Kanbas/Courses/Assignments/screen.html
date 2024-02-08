@@ -1,28 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignments - Course</title>
+  <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+  <style>
+    .breadcrumb {
+      background: transparent;
+      padding: 0; 
+      margin-bottom: 0; 
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+      content: ">"; 
+      color: #D9534F;
+    }
+
+    .breadcrumb-item a {
+      color: #D9534F; 
+    }
+
+    .breadcrumb-item.active a {
+      color: black; 
+      pointer-events: none; 
+      text-decoration: none; 
+    }
+  </style>
+</head>
+<body>
+
+<!-- Breadcrumbs -->
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">CS5610.11744.202310</a></li>
+    <li class="breadcrumb-item active" aria-current="page"><a href="#">Assignments</a></li>
+  </ol>
+</nav>
+
+
+
+</body>
+</html>
+
+
 <head>
   <meta charset="UTF-8">
   <title>Home Screen</title>
   <!-- Styles and other head elements -->
 </head>
 
+
+
 <body>
   <table width="100%">
     <tr>
       <!-- Kanbas Navigation sidebar -->
       <td valign="top">
-        <ul>
-          <li><a href="/Kanbas/Account/Navigation/screen.html">Account</a></li>
-          <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-          <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-          <li><a href="/Kanbas/Calendar/index.html">Calendar</a></li>
-          <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-          <li><a href="/Kanbas/History/index.html">History</a></li>
-          <li><a href="/Kanbas/Studio/index.html">Studio</a></li>
-          <li><a href="/Kanbas/Commons/index.html">Commons</a></li>
-          <li><a href="/Kanbas/Help/index.html">Help</a></li>
-        </ul>
+       
+
+     
+<html>
+  <head>
+ 
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css" />
+  </head>
+  <body>
+    <ul class="wd-kanbas-navigation">
+      <li><a href="/Kanbas/Account/Navigation/screen.html"><i class="fa fa-user"></i> Account</a></li>
+      <li class="wd-active"><a href="/Kanbas/Dashboard/screen.html"><i class="fa fa-tachometer"></i> Dashboard</a></li>
+      <li><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i> Courses</a></li>
+      <li><a href="/Kanbas/Calendar/index.html"><i class="fa fa-calendar"></i> Calendar</a></li>
+      <li><a href="/Kanbas/Inbox/index.html"><i class="fa fa-envelope"></i> Inbox</a></li>
+      <li><a href="/Kanbas/History/index.html"><i class="fa fa-history"></i> History</a></li>
+      <li><a href="/Kanbas/Studio/index.html"><i class="fa fa-lightbulb-o"></i> Studio</a></li>
+      <li><a href="/Kanbas/Commons/index.html"><i class="fa fa-users"></i> Commons</a></li>
+      <li><a href="/Kanbas/Help/index.html"><i class="fa fa-question-circle"></i> Help</a></li>
+    </ul>
+  </body>
+</html>
+
         
         
 
@@ -31,11 +94,14 @@
       <!-- Course Navigation sidebar -->
       <td valign="top">
         <ul>
+          
+         
+
           <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
           <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
           <li><a href="/Kanbas/Courses/Piazza/index.html">Piazza</a></li>
           <li><a href="/Kanbas/Courses/ZoomMeetings/index.html">Zoom Meetings</a></li>
-          <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+          <li class="active"><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
           <li><a href="/Kanbas/Courses/Quizzes/index.html">Quizzes</a></li>
           <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
           <li><a href="/Kanbas/Courses/People/index.html">People</a></li>
@@ -53,8 +119,16 @@
 
       </td>
 
+
+
+
+
+
       <!-- Home Content -->
       <td valign="top">
+  
+
+
         <!DOCTYPE html>
         <html lang="en">
         <head>
@@ -63,21 +137,16 @@
         </head>
         <body>
         
-          <div>
-            <!-- Buttons and Dropdown -->
-            <div>
-              <input type="text" placeholder="Search for Assignments" name="searchAssignments">
-              <button type="button">Group</button>
-              <button type="button">Assignment</button>
-              
-              <select name="editAssignmentDates">
-                <option value="">Edit Assignment Dates</option>
-                <!-- Add options here -->
-              </select>
-            </div>
-          </div>
+          <div class="text-end mb-3">
+            <button type="button" class="btn btn-outline-secondary float-end ms-2"><i class="fa fa-ellipsis-v"></i></button>
+            <button type="button" class="btn btn-outline-primary float-end ms-2"><i class="fa fa-plus"></i> Assignment</button>
+            <button type="button" class="btn btn-outline-primary float-end"><i class="fa fa-users"></i> Group</button>
+        </div>
         
-          
+        <div class="input-group mb-3"> <!-- mb-3 adds some margin at the bottom -->
+          <input type="text" class="form-control" placeholder="Search for Assignment" aria-label="Search for Assignment" name="searchAssignments">
+       
+        </div>
         
         
           <div>
@@ -93,38 +162,53 @@
                 <option value="shareToCommons">Share to Commons</option>
               </select>
             </h2>
-            <ul>
-              <li><a href="Edit/screen.html" title="A1 - ENV + HTML">A1 - ENV + HTML</a>
-                <ul>
-                  <li><a href="#" title="Multiple Modules">Multiple Modules</a> | Not available yet</li>
-                </ul>
+           
+            <ul class="list-group">
+              <li class="list-group-item green-border-left">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  <a href="Edit/screen.html" title="A1 - ENV + HTML">A1 - ENV + HTML</a>
+                  <ul>
+                      <li>Multiple Modules | Not available yet</li>
+                  </ul>
               </li>
-              <li><a href="Edit/screen.html" title="A2 - CSS + BOOTSTRAP">A2 - CSS + BOOTSTRAP</a>
-                <ul>
-                  <li><a href="#" title="Multiple Modules">Multiple Modules</a> | Not available yet</li>
-                </ul>
+              <li class="list-group-item green-border-left">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  <a href="Edit/screen.html" title="A2 - CSS + BOOTSTRAP">A2 - CSS + BOOTSTRAP</a>
+                  <ul>
+                      <li>Multiple Modules | Not available yet</li>
+                  </ul>
               </li>
-              <li><a href="Edit/screen.html" title="A3 - JS + REACT">A3 - JS + REACT</a>
-                <ul>
-                  <li><a href="#" title="Multiple Modules">Multiple Modules</a> | Not available yet</li>
-                </ul>
+              <li class="list-group-item green-border-left">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  <a href="Edit/screen.html" title="A3 - JS + REACT">A3 - JS + REACT</a>
+                  <ul>
+                      <li>Multiple Modules | Not available yet</li>
+                  </ul>
               </li>
-              <li><a href="Edit/screen.html" title="A4 - STATE + REDUX">A4 - STATE + REDUX</a>
-                <ul>
-                  <li><a href="Edit/screen.html" title="Multiple Modules">Multiple Modules</a> | Not available yet</li>
-                </ul>
+              <li class="list-group-item green-border-left">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  <a href="Edit/screen.html" title="A4 - STATE + REDUX">A4 - STATE + REDUX</a>
+                  <ul>
+                      <li>Multiple Modules | Not available yet</li>
+                  </ul>
               </li>
-              <li><a href="Edit/screen.html" title="A5 - NODE + SESSION">A5 - NODE + SESSION</a>
-                <ul>
-                  <li><a href="#" title="Multiple Modules">Multiple Modules</a> | Not available yet</li>
-                </ul>
+              <li class="list-group-item green-border-left">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  <a href="Edit/screen.html" title="A5 - NODE + SESSION">A5 - NODE + SESSION</a>
+                  <ul>
+                      <li>Multiple Modules | Not available yet</li>
+                  </ul>
               </li>
-              <li><a href="Edit/screen.html" title="A6 - MONGO + MONGOOSE">A6 - MONGO + MONGOOSE</a>
-                <ul>
-                  <li><a href="#" title="Multiple Modules">Multiple Modules</a> | Not available yet</li>
-                </ul>
+              <li class="list-group-item green-border-left">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  <a href="Edit/screen.html" title="A6 - MONGO + MONGOOSE">A6 - MONGO + MONGOOSE</a>
+                  <ul>
+                      <li>Multiple Modules | Not available yet</li>
+                  </ul>
               </li>
-            </ul>
+          </ul>
+          
+                      
         
             <!-- Quizzes Section -->
             <h2>QUIZZES 10% of Total 
@@ -167,6 +251,12 @@
                 </ul>
               </li>
             </ul>
+
+
+
+
+
+
             <h2>EXAMS 20% of Total
               <select name="editExam">
                 <option value="edit">Edit</option>
@@ -213,8 +303,14 @@
               </li>
             </ul>
         
+
+
           </div>
+         
         </body>
+      
+  
+
         </html>
         
       </td>
