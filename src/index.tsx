@@ -1,7 +1,7 @@
 
 import React from 'react';
 
->>>>>>> 8b1985e (a2 CSS and Boostrap)
+
 /*
 import ReactDOM from 'react-dom/client';
 import './index.css';
