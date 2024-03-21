@@ -9,10 +9,9 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
-  const course = courses.find(
-    (course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div>
       <h1><HiMiniBars3 /> Course {course?.name}</h1>
@@ -24,7 +23,7 @@ function Courses() {
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home/>} />
             <Route path="Modules" element={<Modules/>} />
-            <Route path="Assignments" element={<Assignments/>} />
+            <Route path="Assignments" element={<Assignments/>} />a
             <Route path="Assignments/:assignmentId" element={<AssignmentEditor/>}/>
             <Route path="Grades" element={<h1>Grades</h1>} />
           </Routes>
